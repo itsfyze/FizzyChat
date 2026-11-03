@@ -1,0 +1,28 @@
+name: FizzyChat
+version: '1.0.0'
+main: com.fizzysmp.chat.FizzyChat
+api-version: '1.21.11'
+softdepend: [DiscordSRV, Essentials, EssentialsChat, LuckPerms]
+commands:
+  local:
+    aliases: [l]
+    description: Switch outgoing chat to local
+  global:
+    aliases: [g]
+    description: Switch outgoing chat to global
+  lc:
+    description: Send one local message
+  gc:
+    description: Send one global message
+  localspy:
+    aliases: [lspy]
+    description: Opt in to remote local chat monitoring
+  fizzychat:
+    description: Reload FizzyChat settings
+permissions:
+  fizzychat.use:
+    default: true
+  fizzychat.localspy:
+    default: op
+  fizzychat.admin:
+    default: op

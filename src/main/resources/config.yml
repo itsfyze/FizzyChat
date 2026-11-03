@@ -1,0 +1,40 @@
+chat:
+  default-mode: GLOBAL
+  # Explicit choices are saved atomically; spy state is never saved.
+  save-player-modes: true
+local:
+  # Three-dimensional distance, same world, inclusive boundary.
+  radius: 100
+  prefix: "&a[L] &r"
+staff-spy:
+  enabled: true
+  # Must remain false: permission/OP never enables spying automatically.
+  default-on: false
+  prefix: "&6[L-SPY] &r"
+  show-world: true
+actionbar:
+  enabled: true
+  duration-seconds: 3
+discordsrv:
+  # False suppresses game-chat forwarding entirely; local privacy stays enforced.
+  enabled: true
+  # Must remain true. Discord-to-Minecraft routing is untouched.
+  global-only: true
+messages:
+  local-enabled: "&aSwitched to local chat."
+  global-enabled: "&bSwitched to global chat."
+  spy-enabled: "&eLocal Spy enabled."
+  spy-disabled: "&cLocal Spy disabled."
+  local-actionbar: "&aChat Mode: LOCAL"
+  global-actionbar: "&bChat Mode: GLOBAL"
+  spy-on-actionbar: "&eLocal Spy: ENABLED"
+  spy-off-actionbar: "&cLocal Spy: DISABLED"
+  no-permission: "&cYou do not have permission."
+  players-only: "&cOnly players can use this command."
+  reloaded: "&aFizzyChat reloaded. Local spy has been disabled for everyone."
+  spy-unavailable: "&cLocal spy is disabled in the configuration."
+  usage-admin: "&e/fizzychat reload"
+  usage-spy: "&e/lspy [on|off]"
+  usage-message: "&eUsage: /{command} <message up to 256 characters; no commands>"
+  usage-mode: "&eUsage: /{command}"
+  reload-failed: "&cReload rejected; previous settings remain active: "
